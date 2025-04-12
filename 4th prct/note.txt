@@ -1,0 +1,7 @@
+npx create-react-app appname
+y
+
+docker run -p 3000:3000 reactdemo
+docker images
+docker ps -a
+docker rm container_id
