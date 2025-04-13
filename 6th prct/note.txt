@@ -1,0 +1,7 @@
+mkdir static-site-server
+cd static-site-server
+
+
+npm init -y
+
+node server.js

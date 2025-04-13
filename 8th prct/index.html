@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NMIET - Home</title>
+
+  <!-- jQuery Mobile CSS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+  <!-- jQuery + jQuery Mobile JS -->
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    .logo {
+      width: 100px;
+      height: auto;
+      margin: 10px auto;
+    }
+    .banner {
+      text-align: center;
+      background: #0074D9;
+      color: white;
+      padding: 20px 10px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .marquee {
+      background: #FFDC00;
+      color: #111;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 14px;
+      white-space: nowrap;
+      overflow: hidden;
+      box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: marquee 10s linear infinite;
+    }
+
+    @keyframes marquee {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .testimonial {
+      font-style: italic;
+      padding: 10px;
+      border-left: 5px solid #0074D9;
+      background: #f1f1f1;
+      margin-bottom: 10px;
+    }
+
+    .news-list li {
+      font-size: 15px;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Home Page -->
+  <div data-role="page" id="home">
+
+    <!-- Header -->
+    <div data-role="header" data-theme="b">
+      <h1>NMIET</h1>
+    </div>
+
+    <!-- Announcement Bar -->
+    <div class="marquee">
+      <span>Admissions Open for 2025 | National Conference on AI - April 30 | College Fest 2025 - Coming Soon!</span>
+    </div>
+
+    <!-- Content -->
+    <div data-role="content">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/College_icon.svg/512px-College_icon.svg.png" class="logo" alt="College Logo">
+
+      <div class="banner">
+        <h2>Welcome to NMIET</h2>
+        <p>Your gateway to knowledge & innovation.</p>
+      </div>
+
+      <h3>Why Choose Us?</h3>
+      <ul data-role="listview" data-inset="true">
+        <li>🌟 NAAC A+ Accredited Institute</li>
+        <li>💡 Industry Collaborations with Microsoft, IBM</li>
+        <li>🎓 95% Placement Rate</li>
+        <li>🏆 Award-Winning Faculty & Research Labs</li>
+      </ul>
+
+      <h3>Quick Links</h3>
+      <a href="#about" class="ui-btn ui-corner-all ui-shadow">About Us</a>
+      <a href="#courses" class="ui-btn ui-corner-all ui-shadow">Courses</a>
+      <a href="#news" class="ui-btn ui-corner-all ui-shadow">Latest News</a>
+      <a href="#contact" class="ui-btn ui-corner-all ui-shadow">Contact</a>
+
+      <h3>Student Testimonials</h3>
+      <div class="testimonial">
+        "NMIET transformed my career! Great faculty, amazing support!"<br><small>- Priya Sharma, B.Tech CSE 2022</small>
+      </div>
+      <div class="testimonial">
+        "The labs and placement training helped me get a job at Infosys."<br><small>- Raj Mehta, MBA 2021</small>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div data-role="footer" data-position="fixed">
+      <h4>&copy; 2025 NMIET</h4>
+    </div>
+
+  </div>
+
+  <!-- About Page -->
+  <div data-role="page" id="about">
+    <div data-role="header" data-theme="b">
+      <h1>About Us</h1>
+    </div>
+    <div data-role="content">
+      <p>NMIET is a premier institution established in 2001, offering undergraduate and postgraduate programs in Engineering, Management, and Science. We focus on experiential learning, industry-based curriculum, and student growth.</p>
+      <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left">Back to Home</a>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <h4>NMIET</h4>
+    </div>
+  </div>
+
+  <!-- Courses Page -->
+  <div data-role="page" id="courses">
+    <div data-role="header" data-theme="b">
+      <h1>Courses</h1>
+    </div>
+    <div data-role="content">
+      <ul data-role="listview" data-inset="true">
+        <li><a href="#">B.Tech in Computer Engineering</a></li>
+        <li><a href="#">B.Sc in Physics</a></li>
+        <li><a href="#">BBA in Marketing</a></li>
+        <li><a href="#">MBA in Finance</a></li>
+        <li><a href="#">Diploma in Mechanical Engineering</a></li>
+      </ul>
+      <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left">Back to Home</a>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <h4>NMIET</h4>
+    </div>
+  </div>
+
+  <!-- News Page -->
+  <div data-role="page" id="news">
+    <div data-role="header" data-theme="b">
+      <h1>Latest News</h1>
+    </div>
+    <div data-role="content">
+      <ul class="news-list" data-role="listview" data-inset="true">
+        <li>📣 College Fest 2025 dates announced – May 12 to 15</li>
+        <li>🎤 Guest Lecture on AI by Dr. Ramesh – April 20</li>
+        <li>📚 Library now open on weekends (9AM–5PM)</li>
+        <li>🎓 Placements: 120+ students placed in top MNCs</li>
+      </ul>
+      <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left">Back to Home</a>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <h4>NMIET</h4>
+    </div>
+  </div>
+
+  <!-- Contact Page -->
+  <div data-role="page" id="contact">
+    <div data-role="header" data-theme="b">
+      <h1>Contact Us</h1>
+    </div>
+    <div data-role="content">
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Your Name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Your Email">
+
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder="Your Message"></textarea>
+
+        <input type="submit" value="Send Message" class="ui-btn ui-btn-b">
+      </form>
+      <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left">Back to Home</a>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <h4>NMIET</h4>
+    </div>
+  </div>
+
+</body>
+</html>
