@@ -1,6 +1,9 @@
 npx create-react-app appname
 y
+cd appname
 
+docker build -t reactdemo .
+docker images
 docker run -p 3000:3000 reactdemo
 docker images
 docker ps -a
