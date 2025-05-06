@@ -1,18 +1,10 @@
 npm install -g @angular/cli
 
-ng new user-auth-app
+ng new user-auth-app --routing
 cd user-auth-app
 
-npm install bootstrap
-in angular.json
-"styles": [
-  "node_modules/bootstrap/dist/css/bootstrap.min.css",
-  "src/styles.css"
-]
+ng generate component components/register --standalone --skip-tests
+ng generate component components/login --standalone --skip-tests
+ng generate component components/profile --standalone --skip-tests
 
-ng generate component pages/register
-ng generate component pages/login
-ng generate component pages/profile
-ng generate service services/auth
-
-ng generate module app-routing --flat --module=app
+ng serve
